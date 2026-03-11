@@ -3,44 +3,77 @@
 <title> AutoMcL </title>
 <style>
 body{
-background-image: url("car.jpg");
+	background-image: url("car.jpg");
 }
 header{
-font-size: 37px;
-font-family: serif;
-text-align: center;
-font-weight: bold;
-color: white;
+	box-shadow: 0 0 20px 5px blue;
+	background-color: black;
+	font-size: 37px;
+	font-family: serif;
+	text-align: center;
+	font-weight: bold;
+	color: white;
 }
 
 nav{
-  background-color: black;  
-display: inline-block;
+	display: block;
+	margin: 5px;
+	text-align: left;
+	padding: 8px 10px;
+	font-size: 27px;
+	color: white;
+	background-color: black;
+	width: 190px;
+    margin: 5px 0;
 }
 a{
+    text-shadow: 0 0 10px blue;
     color: white;
     text-decoration: none;
-    font-size: 18px;  
+    font-size: 22px;  
 	margin-left: 80px;
 	margin-right: 40px;
     font-family: serif;
 }
 
+nav a {
+    display: block;
+    font-size: 22px;
+    color: white;
+    text-decoration: none;
+    padding: 8px 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: blue;
+    color: white;
+    text-shadow: none;
+}
+
 main{
-font-size: 27px;
-font-family: serif;
-text-align: center;
-color: white;
-margin-top: 50px;
+	display: inline-block;
+	font-size: 27px;
+	font-family: serif;
+	text-align: right;
+	color: white;
+	margin-left: 300px; 
+	margin-top: -1000px;
 }
 .car1{
+	transition: transform 0.3s ease;
     display: inline-block;
-
     width: 700px;
     cursor: pointer; 
     box-shadow: 0 0 20px 5px blue;
 	margin-top: 50px;
     text-align: left;
+}
+.car1:hover{
+	transform: scale(1.5);
+	cursor: zoom-in;
 }
 .c1{
     display: inline-block;
@@ -48,59 +81,59 @@ margin-top: 50px;
     max-width: 500px;
     margin-left: 20px;
 }
-.car2{
-    display: inline-block;
-
-    width: 700px;
-    cursor: pointer; 
-    box-shadow: 0 0 20px 5px blue;
-	margin-top: 50px;
-    text-align: left;
-}
 .c2{
     display: inline-block;
-
     max-width: 500px;
     margin-left: 20px;
 }
 
 .t{
-border: 2px solid white;
+  display: block;
+  width: 700px;
+  text-align: center;
+  border: 2px solid white;
+  margin: 10px auto 0 auto;
+  padding: 10px;
 }
 
 .au{
-border: 2px solid blue;
+	background-color: black;
+	width: 90%;
+	margin: auto;
+
 }
 
 .hed{
-border-left: 3px solid white;
-border-right: 3px solid white;
+	border-left: 3px solid white;
+	border-right: 3px solid white;
 }
 
 .pr{
-width: 250px;
-margin: auto;
-text-align: center;
+	width: 250px;
+	text-align: left;
 }
 
 footer {
-  text-align: center;                 
-  color: white; 
+	text-align: center;                 
+	color: white; 
 }
 
 footer a {
-  color: blue;              
-  text-decoration: none;
-  font-weight: bold;
+	color: blue;              
+	text-decoration: none;
+	font-weight: bold;
 }
 
 footer a:hover {
-  text-decoration: underline; 
+	text-decoration: underline; 
 }
-nav a:hover {
-text-decoration: underline;
+.tr{
+	text-align: left;
 }
-
+section{
+text-align: center;
+margin: auto;
+}
 </style>
 </head>
 <body>
@@ -109,17 +142,25 @@ text-decoration: underline;
 <br>
 <nav>
   <a href="https://www.mercedes-benz.com" target="_blank">Mercedes</a>
+  <br>
   <a href="https://www.porsche.com" target="_blank">Porsche</a>
+  <br>
   <a href="https://www.ferrari.com" target="_blank">Ferrari</a>
+  <br>
   <a href="https://www.mclaren.com" target="_blank">McLaren</a>
+  <br>
   <a href="https://www.koenigsegg.com" target="_blank">Koenigsegg</a>
+  <br>
   <a href="https://www.toyota.com" target="_blank">Toyota</a>
+  <br>
   <a href="https://www.audi.com" target="_blank">Audi</a>
+  <br>
   <a href="https://jetourglobal.com" target="_blank">Jetour</a>
-</nav>
 
 <br>
-<main> <h6> Чтобы заказать автомобиль, Вам необходимого пройти авторизацию </h6>
+<h6 class="tr"> Чтобы заказать автомобиль,
+<br>
+Вам необходимого пройти авторизацию </h6>
 <form class="pr"> <input type="text" placeholder="Ваш логин"> 
 <br>
 <input type="password" placeholder="Ваш пароль">
@@ -127,15 +168,16 @@ text-decoration: underline;
 <button>Отправить</button>
 <br>
  </form>
+ </nav>
 <br>
+<main>
 <h4> Представляем Вашему вниманию несколько лучших автомобилей нового времени </h4>
 <p class="au">
 <a href="#mercedes">Mercedes</a>
 <a href="#koenigsegg">Koenigsegg</a>
 <a href="#porsche">Porsche</a>
 <a href="#toyota">Toyota</a>
-
-
+</p>
 <section id="mercedes"> <h2> Mercedes-Benz</h2>
 <img class="car1" src="Mercedes.jpg">
 
@@ -152,7 +194,7 @@ text-decoration: underline;
 <br><br>
 
 <section id="koenigsegg"> <h2> Koenigsegg Jesko Absolut</h2>
-<img class="car2" src="Absolut.jpg">
+<img class="car1" src="Absolut.jpg">
 <h5 class="t"> Шведский гиперкар, один из самых быстрых автомобилей в мире.
 <br>
 Мощность: 1600 л.с.

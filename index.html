@@ -57,7 +57,6 @@ main{
 	display: inline-block;
 	font-size: 27px;
 	font-family: serif;
-	text-align: right;
 	color: white;
 	margin-left: 300px; 
 	margin-top: -1000px;
@@ -72,12 +71,12 @@ main{
     text-align: left;
 }
 .car1:hover{
-	transform: scale(1.5);
+	transform: scale(1.2);
 	cursor: zoom-in;
 }
 .c1{
     display: inline-block;
-    vertical-align: center;
+    text-align: center;
     max-width: 500px;
     margin-left: 20px;
 }
@@ -131,8 +130,33 @@ footer a:hover {
 	text-align: left;
 }
 section{
-text-align: center;
-margin: auto;
+	text-align: center;
+	margin: auto;
+}
+.re{
+	background-color: black;
+    box-shadow: 0 0 20px 5px blue; 
+}
+.video{
+	display: inline-block;
+	margin-right: 20px;
+}
+.table{
+	text-align: center;
+	color: white;
+	margin-left: 70px;
+}
+
+.teee{
+	margin-right: 300px;
+}
+td{
+	font-size: 22px;
+	color: white;
+}
+th{
+	font-size: 25px;
+	color: white;
 }
 </style>
 </head>
@@ -177,6 +201,9 @@ margin: auto;
 <a href="#koenigsegg">Koenigsegg</a>
 <a href="#porsche">Porsche</a>
 <a href="#toyota">Toyota</a>
+<a href="#mclaren">McLaren</a>
+<a href="#video">VideoObzor</a>
+<a href="#table">Table</a>
 </p>
 <section id="mercedes"> <h2> Mercedes-Benz</h2>
 <img class="car1" src="Mercedes.jpg">
@@ -244,6 +271,99 @@ Toyota — один из крупнейших японских автопрои�
 </h5>
 </section>
 
+<section id="mclaren"> <h2>McLaren</h2>
+<img class="car1" src="McLaren.jpg">
+<h5 class="t">
+McLaren — британский производитель суперкаров, известный своим инновационным дизайном и аэродинамикой.  
+<br>
+Автомобили McLaren сочетают в себе высокую скорость, точную управляемость и передовые технологии.  
+<br>
+Подходят как для трека, так и для дорог общего пользования, обеспечивая комфорт и безопасность водителя.  
+<br>
+Мощность: 600–800 л.с.  
+<br>
+Разгон 0–100 км/ч: 2,8–3,2 сек  
+<br>
+Максимальная скорость: до 340 км/ч
+</h5>
+</section>
+
+<section id="video" class="video">
+<h2> Видеообзор автомобилей </h2>
+<table>
+  <tr>
+    <td>
+      <video width="500" controls  poster="znak3.jpg">
+        <source src="mercedes.mp4" type="video/mp4">
+      </video>
+	  <br>
+	 <h5> Насладитесь звуком двигателя наших автомобилей
+	 <br>
+	 (Mercedes Benz G 55 AMG) </h5>
+	  <br>
+	  <audio controls>
+		<source src="merc.mp3" type="audio/mp3">
+	  </audio>
+    </td>
+    <td>
+      <video width="500" controls poster="znak2.jpg">
+        <source src="koenigsegg.mp4" type="video/mp4">
+      </video>
+	  <br>
+	 <h5> Насладитесь звуком двигателя наших автомобилей
+	 <br>
+	 (Koenigsegg Agera R) </h5>
+	  <br>
+	  	  <audio controls>
+		<source src="kg.mp3" type="audio/mp3">
+	  </audio>
+    </td>
+  </tr>
+</table>
+</section>
+
+<section id="table" class="table">
+  <h2 class="teee">Сравнение автомобилей</h2>
+  <table border="3" cellpadding="10" cellspacing="0">
+    <tr>
+      <th>Марка</th>
+      <th>Мощность, л.с.</th>
+      <th>Разгон 0–100 км/ч</th>
+      <th>Максимальная скорость</th>
+    </tr>
+    <tr>
+      <td>Mercedes</td>
+      <td>450–600</td>
+      <td>4.5 сек</td>
+      <td>250 км/ч</td>
+    </tr>
+    <tr>
+      <td>Koenigsegg</td>
+      <td>1600</td>
+      <td>2.5 сек</td>
+      <td>480+ км/ч</td>
+    </tr>
+    <tr>
+      <td>Porsche</td>
+      <td>380–650</td>
+      <td>2.7–4.0 сек</td>
+      <td>330 км/ч</td>
+    </tr>
+    <tr>
+      <td>Toyota</td>
+      <td>120–300</td>
+      <td>7–10 сек</td>
+      <td>210 км/ч</td>
+    </tr>
+    <tr>
+      <td>McLaren</td>
+      <td>600–800</td>
+      <td>2.8–3.2 сек</td>
+      <td>340 км/ч</td>
+    </tr>
+  </table>
+</section>
+
 </main>
 
 <footer>
@@ -255,4 +375,5 @@ Toyota — один из крупнейших японских автопрои�
 Дизайн и разработка — команда Razrab </h3>
 </footer>
 
+</body>
 </html>
